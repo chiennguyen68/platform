@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 12px 0 0;
+    
+    button{
+        width: 28px;
+        height: 28px;
+        padding: 1px 0 0;
+        font-weight: 600;
+        font-size: 14px;
+
+        &.smallText{
+            font-size: 12px;
+        }
+
+        &.tinyText{
+            font-size: 10px;
+        }
+    }
+}

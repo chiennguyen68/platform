@@ -1,0 +1,58 @@
+@import '../../../token/color.scss';
+@import '../../../token/radius.scss';
+@import '../../../token/state.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nunito&subset=vietnamese');
+
+.custom-tiny-editor-container {
+    .tox {
+        border-radius: 0;
+        border: 0;
+
+        .tox-edit-area {
+            border: 1px solid $grey-6;
+            border-radius: $default-radius;
+        }
+
+        .tox-editor-header {
+            box-shadow: none !important;
+            border-bottom: 1px solid $grey-8 !important;
+            background-color: $grey-8 !important;
+            padding: 4px 8px !important;
+            margin-bottom: 12px;
+            border-radius: $default-radius;
+
+            .tox-toolbar__primary {
+                background-color: $grey-8 !important;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 4px;
+                flex-wrap: wrap;
+            }
+
+            .tox-tbtn[aria-label='Blocks'],
+            .tox-tbtn[aria-label='Font sizes'] {
+                border-radius: $default-radius;
+                background-color: $white;
+                padding: 0 8px;
+
+                > span {
+                    font-family: Nunito, sans-serif;
+                    font-size: 15px;
+                }
+            }
+
+            .tox-tbtn[aria-label='Font sizes'] {
+                width: 80px !important;
+            }
+
+            .tox-tbtn[aria-label='Blocks'] {
+                width: 130px !important;
+            }
+
+            .tox-toolbar__group {
+                padding: 0 0;
+            }
+        }
+    }
+}

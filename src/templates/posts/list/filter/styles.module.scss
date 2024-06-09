@@ -1,0 +1,66 @@
+@import '@/components/token/color.scss';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px;
+    gap: 12px;
+
+    .search {
+        width: 300px;
+        position: relative;
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            z-index: 1;
+        }
+
+        input {
+            width: 100%;
+            position: relative;
+            z-index: 0;
+            padding-left: 32px;
+        }
+    }
+
+    .selection {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .rightArea {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+}
+
+.topics {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $grey-7;
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 8px;
+
+        h3 {
+            margin: 0;
+            font-weight: 700;
+        }
+
+        button {
+            text-decoration: underline;
+            color: $grey-3;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import '../../token/color.scss';
+@import '../../token/radius.scss';
+@import '../../token/state.scss';
+
+.container {
+    padding: 8px 16px 7px;
+    border-radius: $default-radius;
+    background: $grey-8;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+
+    &.outline {
+        border: 1px solid $grey-6;
+        background: 0;
+    }
+
+    &.primary {
+        background-color: $primary;
+        color: #ffffff;
+
+        &:hover {
+            background-color: $black;
+        }
+
+        &:active {
+            background-color: $black;
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background: $grey-8 !important;
+        color: $grey-3;
+        border: 0;
+    }
+
+    &:hover {
+        &:not(.primary) {
+            background: $button-mouse-over-background;
+        }
+    }
+
+    &:active {
+        &:not(.primary) {
+            background: $default-mouse-click-background;
+        }
+    }
+}

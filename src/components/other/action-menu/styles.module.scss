@@ -1,0 +1,13 @@
+@import '../../token/color.scss';
+@import '../../token/radius.scss';
+@import '../../token/state.scss';
+
+.triggerButton {
+    padding: 4px 2px;
+    border-radius: $default-radius;
+    border: 1px solid $grey-4;
+
+    &:hover {
+        background: $default-mouse-over-background;
+    }
+}

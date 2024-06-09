@@ -1,0 +1,60 @@
+@import '../../token/color.scss';
+
+.container {
+    border-bottom: 1px solid $grey-7;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 10;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 20px;
+    }
+
+    .company {
+        font-weight: 900;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: -10px;
+    }
+
+    .action {
+        display: inline-flex;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $grey-8;
+            border: 1px solid $grey-5;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            h3 {
+                font-weight: 600;
+                line-height: 18px;
+            }
+        }
+    }
+}

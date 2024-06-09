@@ -1,0 +1,20 @@
+@import '../../token/color.scss';
+
+.container {
+    margin: 0 0 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    h2 {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 30px;
+        margin: 0 0 4px;
+    }
+
+    p {
+        color: $grey-2;
+        font-size: 15px;
+    }
+}

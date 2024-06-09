@@ -1,0 +1,46 @@
+@import '../../token/color.scss';
+@import '../../token/radius.scss';
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    0% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        background: rgba($color: #ffffff, $alpha: 0.3);
+
+        .iconWrapper{
+            background: $grey-2;
+            border-radius: $default-radius;
+            padding: 6px;
+            color: #ffffff;
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            svg{
+                animation: spin linear 1.5s infinite;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import '../../token/color.scss';
+@import '../../token/radius.scss';
+@import '../../token/state.scss';
+
+.container {
+    border-radius: $default-radius;
+    text-align: center;
+    background-color: $grey-7;
+    color: $primary;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 16px;
+    padding: 4px 8px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    cursor: default;
+
+    &.clickable {
+        cursor: pointer;
+
+        &:hover{
+            background-color: $default-mouse-over-background;
+        }
+
+        &:active{
+            background-color: $default-mouse-click-background;
+        }
+    }
+
+    &.outline {
+        border-color: $grey-5;
+        background: 0;
+    }
+
+    &.blur {
+        color: $grey-3;
+    }
+}

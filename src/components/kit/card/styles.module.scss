@@ -1,0 +1,9 @@
+@import '../../token/color.scss';
+@import '../../token/radius.scss';
+
+.container {
+    border: 1px solid $grey-7;
+    border-radius: $default-radius;
+    overflow: hidden;
+    display: inline-block;
+}

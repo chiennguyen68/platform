@@ -1,0 +1,11 @@
+@import '../../../token/color.scss';
+
+.container {
+    font-size: 12px;
+    margin-top: 4px;
+    color: $red-4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+}

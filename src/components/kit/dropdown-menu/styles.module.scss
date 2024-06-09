@@ -1,0 +1,14 @@
+@import '../../token/color.scss';
+
+.dropdownContent {
+    background: #ffffff;
+}
+
+.dropdownItem {
+    font-size: 15px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $grey-8;
+    }
+}

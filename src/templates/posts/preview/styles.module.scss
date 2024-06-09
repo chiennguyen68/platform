@@ -1,0 +1,47 @@
+@import '@/components/token/color.scss';
+
+.container {
+    padding: 60px 20px;
+    max-width: 720px;
+    margin: auto;
+
+    p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .title {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid $grey-8;
+
+        h1 {
+            font-weight: 800;
+            font-size: 42px;
+            margin: 0 0 12px;
+        }
+
+        .date{
+            font-size: 14px;
+            color: $grey-3;
+            margin: 0 0 40px;
+        }
+    }
+
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        .tag{
+            font-size: 15px;
+        }
+    }
+
+    .mainContent{
+        h1, h2, h3, h4, h5, h6{
+            margin-top: 40px;
+            font-weight: 700;
+        }
+    }
+}

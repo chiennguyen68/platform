@@ -1,0 +1,15 @@
+@import '../../components/token/common.scss';
+
+.container {
+    padding: 32px 20px;
+
+    .body {
+        display: flex;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .mainContent {
+        width: calc(100% - 60px - $sidebar-width);
+    }
+}

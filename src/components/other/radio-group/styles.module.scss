@@ -1,0 +1,46 @@
+@import '../../token/color.scss';
+@import '../../token/radius.scss';
+@import '../../token/state.scss';
+
+.container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .option {
+        border: 1px solid $grey-5;
+        padding: 1px 12px 1px;
+        position: relative;
+        font-size: 15px;
+        font-weight: 600;
+        color: $grey-2;
+        cursor: pointer;
+
+        &.active{
+            border-color: $orange-5;
+            background-color: $orange-5;
+            z-index: 1;
+            color: $orange-1;
+        }
+
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
+
+        &:first-child {
+            border-top-left-radius: $default-radius;
+            border-bottom-left-radius: $default-radius;
+        }
+
+        &:last-child {
+            border-top-right-radius: $default-radius;
+            border-bottom-right-radius: $default-radius;
+        }
+
+        &:hover{
+            &:not(.active){
+                background-color: $default-mouse-over-background;
+            }
+        }
+    }
+}

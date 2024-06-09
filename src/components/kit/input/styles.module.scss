@@ -1,0 +1,26 @@
+@import '../../token/color.scss';
+@import '../../token/radius.scss';
+@import '../../token/state.scss';
+
+@mixin inputContainer {
+    border: 1px solid $grey-6;
+    padding: 8px 16px 7px;
+    border-radius: $default-radius;
+    font-size: 15px;
+
+    &:hover {
+        background: $default-mouse-over-background;
+    }
+
+    &:focus {
+        background: 0;
+    }
+
+    &.hasError {
+        border-color: $red-4;
+    }
+}
+
+.container {
+    @include inputContainer;
+}

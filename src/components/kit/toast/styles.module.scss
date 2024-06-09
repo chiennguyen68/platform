@@ -1,0 +1,46 @@
+@import '../../token/radius.scss';
+@import '../../token/color.scss';
+
+.container {
+    &.i {
+        background: #ffffff;
+        border-radius: $default-radius;
+        padding: 12px;
+
+        .title {
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .description {
+            font-size: 14px;
+            color: $grey-2;
+        }
+
+        &.destructive {
+            background: $red-4;
+            border-color: $red-4;
+        
+            .title,
+            .close {
+                color: #ffffff;
+            }
+            .description {
+                color: #f8f8f8;
+            }
+        }
+        
+        &.success {
+            background: $green-3;
+            border-color: $green-3;
+        
+            .title,
+            .close {
+                color: #ffffff;
+            }
+            .description {
+                color: #f8f8f8;
+            }
+        }
+    }
+}

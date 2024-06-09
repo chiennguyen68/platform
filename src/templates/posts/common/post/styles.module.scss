@@ -1,0 +1,46 @@
+@import '@/components/token/radius.scss';
+@import '@/components/token/color.scss';
+
+$max-width: 620px;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: $max-width;
+}
+
+.leftArea {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.previewButton {
+    cursor: pointer;
+    border: 1px solid #d5d5d5;
+    padding: 4px 8px;
+    border-radius: 4px;
+    height: auto;
+    display: inline-flex;
+    color: #4c4c4c;
+}
+
+.topicTags {
+    margin-top: 4px;
+
+    .tags {
+        &.hasError {
+            padding: 16px;
+            border-radius: $default-radius;
+            border: 1px solid $red-4;
+        }
+    }
+}
+
+.clearButton{
+    font-size: 14px;
+    color: $grey-3;
+    text-decoration: underline;
+    margin-top: 12px;
+}

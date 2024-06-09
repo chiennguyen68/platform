@@ -1,0 +1,18 @@
+@import '../../../token/color.scss';
+@import '../../../token/radius.scss';
+
+.container {
+    height: 600px;
+    border-radius: $default-radius;
+    width: 100%;
+
+    &.loading {
+        background-color: $grey-8;
+    }
+
+    &.hasError {
+        div[class='tox-edit-area'] {
+            border-color: $red-4;
+        }
+    }
+}
